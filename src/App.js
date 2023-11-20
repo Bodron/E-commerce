@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import Header from './Header'
 import Home from './components/Home'
-import { BrowserRouter, Route, Routes, NavLink, Link } from 'react-router-dom'
+import { HashRouter, Route, Routes, NavLink, Link } from 'react-router-dom'
 import Checkout from './components/Checkout'
 import Login from './components/Login'
 import { useStateValue } from './components/StateProvider'
@@ -32,14 +32,14 @@ function App() {
   console.log('user is', user)
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes path="/">
         <Route path="/checkout" exact element={<Checkout />}></Route>
         <Route path="/login" exact element={<Login />}></Route>
         <Route path="/home" exact element={<Home />}></Route>
         <Route path="/" exact element={<Home />}></Route>
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
