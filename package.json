@@ -2,7 +2,7 @@
   "name": "e-commerce-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://bodron.github.io/e-commerce",
+  "homepage": "http://bodron.github.io/E-commerce",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
